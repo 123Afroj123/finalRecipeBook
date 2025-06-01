@@ -17,7 +17,7 @@ const Add = () => {//title,ingredients,instructions,cookingtime,servingsize
         e.preventDefault(); // Prevent default form submission
         setLoading(true);
         const data = {title,ingredients,instructions,cookingtime,servingsize};
-            axios.post("/api/add",data)
+            axios.post("https://finalrecipebook-3.onrender.com/api/add",data)
             .then(()=>{
                 setLoading(false)
                 alert("Recipe created")
