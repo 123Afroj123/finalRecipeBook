@@ -5,7 +5,7 @@ import tailwindcss from"@tailwindcss/vite"
 export default defineConfig({
   server:{
     proxy:{
-      "/api":"https://finalrecipebook-2.onrender.com"
+      "/api":"https://finalrecipebook-3.onrender.com"
     }
   },
   plugins: [tailwindcss(),react()],
