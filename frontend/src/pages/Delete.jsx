@@ -6,7 +6,7 @@ const Delete = () => {
   const { id } = useParams();
 
   const handleDelete = () => {
-    axios.delete(`/api/delete/${id}`)
+    axios.delete(`https://finalrecipebook-3.onrender.com/api/delete/${id}`)
       .then(() => {
         alert("User deleted successfully!");
         window.location.href = "/"; // Redirect to home page after deletion
