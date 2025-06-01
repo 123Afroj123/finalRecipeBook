@@ -10,7 +10,7 @@ function View() {
   const [info, setInfo] = useState({})
    const {id} = useParams();
   useEffect(()=>{
-    axios.get(`/api/view/${id}`)
+    axios.get(`https://finalrecipebook-3.onrender.com/api/view/${id}`)
     .then((response)=>{
       setInfo(response.data)
       console.log(response.data)
