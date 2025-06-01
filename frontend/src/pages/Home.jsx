@@ -115,7 +115,7 @@ const Home = () => {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    axios.get(`/api/viewall`)
+    axios.get(`https://finalrecipebook-3.onrender.com/api/viewall`)
       .then((res) => setInfo(res.data))
       .catch((error) => console.error(error));
   }, []);
@@ -123,7 +123,7 @@ const Home = () => {
   useEffect(() => {
     const delayDebounce = setTimeout(() => {
       if (query.length > 1) {
-        axios.get(`/api/search?q=${encodeURIComponent(query)}`)
+        axios.get(`https://finalrecipebook-3.onrender.com/api/search?q=${encodeURIComponent(query)}`)
           .then((res) => {
             setResults(res.data);
             
