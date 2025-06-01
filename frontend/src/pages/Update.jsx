@@ -15,7 +15,7 @@ const Update = () => {
 
    useEffect(()=>{
        setLoading(true)
-    axios.get(`/api/view/${id}`)
+    axios.get(`https://finalrecipebook-3.onrender.com/api/view/${id}`)
     .then((res) => {
 
       setTitle(res.data.title);
@@ -39,7 +39,7 @@ const Update = () => {
     const data = {title,ingredients,instructions,cookingtime,servingsize}
 
 
-    axios.put(`/api/update/${id}`, data)
+    axios.put(`https://finalrecipebook-3.onrender.com/api/update/${id}`, data)
       .then(() => {
         setLoading(false);
         alert("Recipe updated successfully!");
