@@ -5,7 +5,7 @@ import tailwindcss from"@tailwindcss/vite"
 export default defineConfig({
   server:{
     proxy:{
-      "/api":"https://recipe-book-oea4.vercel.app"
+      "/api":"https://recipe-book-oea4.vercel.app/"
     }
   },
   plugins: [tailwindcss(),react()],
